@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/$PROJECT_ID/helm'
-  args: ['install', 'gcb-helm-cronjob', '--name', 'gcb-helm-cronjob', '--namespace', 'gcb-helm-cronjob']
+  args: ['install', './gcb-helm-cronjob']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
   - 'CLOUDSDK_CONTAINER_CLUSTER=test'
